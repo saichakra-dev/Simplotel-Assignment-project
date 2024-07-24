@@ -1,0 +1,267 @@
+@import url("https://fonts.googleapis.com/css2?family=Platypi:ital,wght@0,300..800;1,300..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Platypi:ital,wght@0,300..800;1,300..800&family=Roboto&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.container {
+  width: 100%;
+  background: rgb(255, 236, 184);
+  background: linear-gradient(
+    148deg,
+    rgba(255, 236, 184, 1) 0%,
+    rgba(255, 184, 235, 1) 100%
+  );
+}
+
+.nav-bar {
+  height: 10%;
+  width: 100%;
+  background-color: #ff7171;
+}
+
+.nav-bar ul {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.nav-bar ul li {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style: none;
+  font-family: "Platypi", serif;
+  font-weight: bolder;
+  font-size: 1.2em;
+  margin-top: 0.5%;
+  margin-bottom: 0.5%;
+}
+
+.nav-image {
+  height: 50px;
+  width: 100%;
+}
+
+.first-half {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 91vh;
+  width: 100%;
+}
+
+.first-half .first-left {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.heading {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 4rem;
+  color: black;
+  margin-left: 8%;
+  margin-right: 8%;
+  padding-bottom: 5%;
+}
+
+.content {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 1.4rem;
+  color: black;
+  margin-left: 8%;
+  margin-right: 8%;
+}
+
+.button {
+  margin-top: 10%;
+  height: 50px;
+  width: 35%;
+  background-color: #ff7171;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 8%;
+  margin-right: 8%;
+}
+
+.first-half .first-right {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.first-half .first-right img {
+  width: 100%;
+  height: 100vh;
+}
+
+.second-half {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.second-half .second-left {
+  height: 80%;
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.first-column {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 8%;
+}
+
+.first-column img {
+  width: 80%;
+  height: 250px;
+  margin-top: 20px;
+}
+
+.second-column {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.second-column img {
+  width: 80%;
+  height: 520px;
+  margin-top: 20px;
+}
+
+.second-right {
+  width: 50%;
+  margin-left: 20px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.right-con {
+  height: 25%;
+  width: 80%;
+  background-color: #ff7171;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 25px;
+}
+
+.right-con .btn {
+  height: 1rem;
+  width: 1rem;
+}
+
+.btn-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.button-image {
+  height: 50px;
+  width: 50px;
+  padding-top: 18px;
+}
+
+@media only screen and (max-width: 900px) {
+  /* Styles for phones and tablets */
+
+  .first-half {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+  }
+
+  .first-half .first-left,
+  .first-half .first-right {
+    width: 100%;
+    padding: 5%;
+  }
+
+  .heading {
+    font-size: 3rem;
+    margin: 5%;
+  }
+
+  .content {
+    font-size: 1.2rem;
+    margin: 5%;
+  }
+
+  .button {
+    width: 50%;
+    margin: 5%;
+  }
+
+  .first-half .first-right img {
+    height: auto;
+  }
+
+  .second-half {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+  }
+
+  .second-half .second-left,
+  .second-half .second-right {
+    width: 100%;
+    padding: 5%;
+  }
+
+  .first-column,
+  .second-column {
+    width: 100%;
+    margin: 5% 0;
+  }
+
+  .first-column img,
+  .second-column img {
+    width: 90%;
+    height: auto;
+  }
+
+  .right-con {
+    width: 90%;
+    margin: 5%;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  /* Styles for PCs */
+  .container {
+    padding: 30px;
+  }
+}
